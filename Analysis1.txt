@@ -1,0 +1,29 @@
+This analysis will be for the method Airport::findFlight(std::string flightNumber).
+
+This method is used to find a Flight using the argument flightNumber to see if a flight exists, and
+if so, return the pointer to that flight.
+
+1. What conditions will produce the best case for this function in terms of computation time? 
+(Or, if you think the best case and worst case are the same, explain why.)
+The best case for this function would be if the flightNumber we are searching for is the first flight searched
+so that we don't have to search through the entire flightsMap.Resulting in a time complexity of O(1).
+
+2. What conditions will produce the worst case for this function in terms of computation time?
+On the other hand, the worst case for this function is if the flight doesn't exist in flightsMap at all, since
+then we would have to wait for it to iterate throughout the entire flightsMap only to return a nullptr.
+
+3. What is the best-case time complexity of this function? Express your answer using Big-O notation, 
+and explain how you got your answer.
+The best case time complexity would be O(1), which will only occur if the flights we're searching for is first.
+
+4. What is the worst-case time complexity of this function? Express your answer using Big-O notation, 
+and explain how you got your answer.
+The worst case time complexity would be O(n), which means we would have to loop through the flightsMap, either finding
+the flight later on or not at all.
+
+5. As part of your analysis, you should also explain how use of the standard library containers offers 
+better time complexity than using a simple array, and identify what the worse time complexity for the function 
+would be if you had used an array as your backing data structure instead.
+If an array was used instead, the time complexity would still be O(n), as the algorithm would need to iterate through the 
+entire array to find the specified flight number, which would be the worse case. Using the standar library container, flightsMap, 
+it is similar time complexity as an array but allows for more efficient ways to search on average throughout. Especially for larger datasets.

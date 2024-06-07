@@ -1,0 +1,25 @@
+
+
+
+
+Data Structures 244-001: Challenge Project II: Airport System
+By Alex Novak and Kai Ahrens
+
+
+
+The Airport Reservation System project aims to develop a comprehensive system that streamlines the flight reservation process for passengers. 
+This system will allow travelers to make reservations across international, national, and local airports. Passengers can perform critical 
+actions such as creating, modifying, and canceling reservations. To ensure a seamless experience, the system will enforce reservation rules, 
+including seat availability and flight compatibility. It will also effectively manage airport data, covering flight details, reservations, 
+and passenger information.
+
+To efficiently manage the project, the following standard library containers and algorithms will be utilized:
+
+Maps and Multimaps: These data structures will play a pivotal role in organizing and sorting airports. Maps will store airport data, 
+while multimaps will facilitate alphabetical sorting of airports by name and seat availability by number. This arrangement provides 
+efficient data retrieval and sorting capabilities, enhancing the user experience.
+
+Binary Search Algorithms: Binary search will be implemented to optimize specific operations within the system. This algorithm will notably 
+accelerate the process of locating flight information and reservations. It contributes to the system's performance by expediting critical tasks.
+
+(If you'd like to take a peek at our UML diagram the PDF should be above the proposal.txt file in the solution items folder.)

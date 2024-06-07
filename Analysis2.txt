@@ -1,0 +1,29 @@
+This analysis will be for the method Airport::makeReservation(const Reservation& reservation).
+
+This method is used to try and make a reservation. If a reservation is made, it returns true, else it returns false
+if a reservation is not possible because a flight is full or a reservation with the same ID already exists.
+
+1. What conditions will produce the best case for this function in terms of computation time? 
+(Or, if you think the best case and worst case are the same, explain why.)
+The best case for this function would be if there are only empty spots in the flights and that the reservation is unique.
+This allows for the reservation to be made successfully.
+
+2. What conditions will produce the worst case for this function in terms of computation time?
+The worst case scenario would be that the flight is full and that the reservation already exists. This would cause the 
+function to have to check through multiple variables before returning false.
+
+3. What is the best-case time complexity of this function? Express your answer using Big-O notation, 
+and explain how you got your answer.
+The best-case time complexity is O(1),given reservation for the argument satisfiles the variables that the reservation ID is 
+unique, the associated flight is found, and the reservation is successfully made.
+
+4. What is the worst-case time complexity of this function? Express your answer using Big-O notation, 
+and explain how you got your answer.
+The worst case time complexity is O(n), where we have to check n number of reservations and n number of flights
+as this would mean we would have to check through all the reservations and flights.
+
+5. As part of your analysis, you should also explain how use of the standard library containers offers 
+better time complexity than using a simple array, and identify what the worse time complexity for the function 
+would be if you had used an array as your backing data structure instead.
+Using the standard library would allow for efficient searching and inserting operations for both reservations and flights. If an array was
+to be used, the worst time complexity would be O(n^2) as searching for both a reservation and a flight would take linear time for each operation.

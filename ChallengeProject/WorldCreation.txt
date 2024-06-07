@@ -1,0 +1,29 @@
+Airport Minneapolis USA international 50
+Airport Tokyo Asia international 30
+Airport Chicago USA national 40
+Airport Sydney Australia international 25
+Airport Denver USA international 35
+Airport London Europe international 20
+
+Flight 123A Minneapolis Tokyo 50 international  // Valid flight
+Flight 456B Tokyo Minneapolis 30 international  // Valid flight
+Flight 789C Chicago Sydney 40 national  // invalid flight
+Flight 101D Sydney Chicago 25 national  // invalid flight
+Flight 202E Denver London 35 national  // invalid flight
+Flight 303F London Denver 20 international  // invalid flight
+Flight 404G Minneapolis Chicago 45 national  // Valid flight SHOULD BE VALID BUT IS NOT
+Flight 505H Tokyo Sydney 28 international  // Valid flight
+Flight 606I Chicago Denver 38 national  // Valid flight
+Flight 606J Denver Chicago 38 national  // Valid flight
+Flight 707J Sydney London 18 international  // Valid flight
+Flight 808K Minneapolis Tokyo 70 international  // Valid. 
+Flight 909L Tokyo Minneapolis 12 international  // Valid
+Flight 111M Chicago Sydney 60 international  // invalid flight
+Flight 222N Sydney Chicago 30 national  // invalid flight
+Flight 333O Denver London 40 national  // invalid flight
+Flight 444P London Minneapolis 50 international  // Valid flight
+Flight 555Q Minneapolis Sydney 25 international  // Valid
+Flight 666R Tokyo Chicago 18 national  // Invalid, international flight to national airport
+Flight 777S Chicago London 38 international  // invalid flight
+Flight 888T Sydney Denver 20 national  // invalid flight
+Flight 999U Denver Tokyo 45 international  // Invalid, national flight to international airport
